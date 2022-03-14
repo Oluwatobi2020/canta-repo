@@ -1,0 +1,45 @@
+.TopNav {
+  background-color: #ffffff;
+  padding: 1rem 5rem 1rem 5rem;
+}
+
+.TopNav .tool_bar {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TopNav .tool_bar .download-buttonText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TopNav .tool_bar .download-buttonText .TopNavText {
+  color: #003366;
+  font-weight: 500;
+  font-size: 1em;
+  margin-right: 5rem;
+}
+
+.TopNav .tool_bar .download-buttonText .download-button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  padding: 1rem;
+  max-width: 181px;
+}
+/*# sourceMappingURL=NavBar.css.map */
