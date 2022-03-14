@@ -1,6 +1,6 @@
 .TopNav {
   background-color: #ffffff;
-  padding: 1rem 5rem 1rem 5rem;
+  padding: 0rem 5rem 0rem 5rem;
 }
 
 .TopNav .tool_bar {
@@ -39,7 +39,7 @@
   border-radius: 8px;
   font-size: 0.8em;
   text-transform: capitalize;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   max-width: 181px;
 }
 /*# sourceMappingURL=NavBar.css.map */

@@ -47,72 +47,11 @@ body {
       .hero-button {
         display: flex;
         padding-top: 1rem;
-        .googleplay {
-          .googleplaybutton {
-            display: flex;
-            padding: 1rem;
-            border: none;
-            border-radius: 7px;
-            color: $pri-color;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 0.5em;
-            max-height: 58px;
-            .google-icon {
-              .googleAppleFonts {
-                font-size: 2.5em;
-              }
-            }
-          }
-          .inner-cont {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            align-items: left;
-            margin-left: 1rem;
-            // justify-content: center;
-            .sub-content-1 {
-              font-size: 0.6em;
-            }
-            .sub-content-2 {
-              font-size: 2em;
-            }
-          }
+        .googleplaybutton{
+          margin-right: 1.5rem;
         }
       }
-      .appstore {
-        margin-left: 2rem;
-        .appstorebutton {
-          display: flex;
-          padding: 1rem;
-          border: none;
-          border-radius: 7px;
-          color: $pri-color;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 0.5em;
-          max-height: 58px;
-          .apple-icon {
-            .googleAppleFonts {
-              font-size: 2.5em;
-            }
-          }
-          .inner-cont {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            align-items: left;
-            margin-left: 1rem;
-            // justify-content: center;
-            .sub-content-1 {
-              font-size: 0.6em;
-            }
-            .sub-content-2 {
-              font-size: 2em;
-            }
-          }
-        }
-      }
+
     }
   }
   .sub-section_2 {
@@ -120,8 +59,7 @@ body {
     padding-left: 2rem;
 
     .rotating-globe {
-      width: 100%;
-      overflow: hidden;
+      width: 80%;
     }
   }
 }
@@ -639,3 +577,6 @@ body {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
+
+
+

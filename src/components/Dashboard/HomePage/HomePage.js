@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import CantaWorld from "../../../assets/canta-globe.png";
 import TiventyDigital from "../../../assets/tiventydigital.png";
@@ -9,7 +8,6 @@ import HeliumHealth from "../../../assets/heliumhealth.png";
 import Evolvecredit from "../../../assets/evolvecredit.png";
 import LeftArrow from "../../../assets/Arrow 1.png";
 import RightArrow from "../../../assets/Arrow 2.png";
-import { FaGooglePlay, FaApple } from "react-icons/fa";
 import { IoFlash } from "react-icons/io5";
 import { BsSignpost2Fill } from "react-icons/bs";
 import { BiUserPin } from "react-icons/bi";
@@ -25,12 +23,13 @@ import FirstFooter from "../../../assets/footer-1.png";
 import Accordion from "../../Dashboard/Utils/Accordion.js";
 import SendGlobally from "../../../assets/send-globally.png";
 import FooterLogo from "../../../assets/footer-logo.png";
+import AppStore from "../../../assets/AppStore.png";
+import GoogleStore from "../../../assets/GooglePlay.png";
 
 const HomePage = () => {
   return (
     <>
-      <Box
-        sx={{ flexGrow: 1, display: "flex", flexDirection: "row" }}
+      <header
         className="hero-section"
       >
         <div className="sub-section">
@@ -42,7 +41,10 @@ const HomePage = () => {
             </h2>
             <p>You can pay anyone, anywhere, in any currency. </p>
             <div className="hero-button">
-              <div className="googleplay">
+              <img src={GoogleStore} alt="Google store" className="googleplaybutton"/>
+              <img src={AppStore} alt="App store" className="appstorebutton"/>
+
+              {/* <div className="googleplay">
                 <button className="googleplaybutton">
                   <div className="google-icon">
                     <FaGooglePlay className="googleAppleFonts" />
@@ -63,34 +65,17 @@ const HomePage = () => {
                     <span className="sub-content-2">App Store</span>
                   </div>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="sub-section_2">
-            <img src={CantaWorld} alt="CantaWorld" className="rotating-globe"/>
+            <img src={CantaWorld} alt="CantaWorld" className="rotating-globe" />
           </div>
         </div>{" "}
-      </Box>
+      </header>
 
-      <Grid
-        container
-        className="suppliers"
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
+      <section className="suppliers">
         <div className="paysuppliers_1">
-          <p>Pay your suppliers anywhere in the world</p>
-        </div>
-        <div className="paysuppliers_2">
-          <p>Pay your suppliers anywhere in the world</p>
-        </div>
-        <div className="paysuppliers_3">
-          <p>Pay your suppliers anywhere in the world</p>
-        </div>
-        <div className="paysuppliers_4">
           <p>Pay your suppliers anywhere in the world</p>
         </div>
         {/* <Grid
@@ -100,7 +85,7 @@ const HomePage = () => {
         {/* <div className="paysuppliers">
 
         </div> */}
-      </Grid>
+      </section>
 
       <Grid
         container
@@ -310,26 +295,32 @@ const HomePage = () => {
 
       <footer className="longest-section">
         <div className="sub-section-1">
-          <h2>Hear what people<br/> are saying about<br/> Canta</h2>
-          <img src={FirstFooter} alt="First-footer"/>
+          <h2>
+            Hear what people
+            <br /> are saying about
+            <br /> Canta
+          </h2>
+          <img src={FirstFooter} alt="First-footer" />
         </div>
 
         <div className="faq">
           <div className="faq-header">
-          <h2>Faq</h2>
+            <h2>Faq</h2>
           </div>
           <div className="accordion">
-            <Accordion/>
+            <Accordion />
           </div>
         </div>
         <div className="send-money-globally">
-          <img src={SendGlobally} alt="Send money globally"/>
+          <img src={SendGlobally} alt="Send money globally" />
         </div>
 
         <div className="real-footer">
           <div className="real-footer-1">
             <img src={FooterLogo} alt="Footer logo" />
-            <p>Helping africans send<br></br> money globally</p>
+            <p>
+              Helping africans send<br></br> money globally
+            </p>
           </div>
           <div className="real-footer-2">
             <span>Contact Us</span>

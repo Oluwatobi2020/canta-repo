@@ -64,90 +64,8 @@ body {
   padding-top: 1rem;
 }
 
-.hero-section .sub-section .sub-section_1 .hero-button .googleplay .googleplaybutton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-  border: none;
-  border-radius: 7px;
-  color: #003366;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.5em;
-  max-height: 58px;
-}
-
-.hero-section .sub-section .sub-section_1 .hero-button .googleplay .googleplaybutton .google-icon .googleAppleFonts {
-  font-size: 2.5em;
-}
-
-.hero-section .sub-section .sub-section_1 .hero-button .googleplay .inner-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  margin-left: 1rem;
-}
-
-.hero-section .sub-section .sub-section_1 .hero-button .googleplay .inner-cont .sub-content-1 {
-  font-size: 0.6em;
-}
-
-.hero-section .sub-section .sub-section_1 .hero-button .googleplay .inner-cont .sub-content-2 {
-  font-size: 2em;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore {
-  margin-left: 2rem;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore .appstorebutton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-  border: none;
-  border-radius: 7px;
-  color: #003366;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.5em;
-  max-height: 58px;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore .appstorebutton .apple-icon .googleAppleFonts {
-  font-size: 2.5em;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore .appstorebutton .inner-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  margin-left: 1rem;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore .appstorebutton .inner-cont .sub-content-1 {
-  font-size: 0.6em;
-}
-
-.hero-section .sub-section .sub-section_1 .appstore .appstorebutton .inner-cont .sub-content-2 {
-  font-size: 2em;
+.hero-section .sub-section .sub-section_1 .hero-button .googleplaybutton {
+  margin-right: 1.5rem;
 }
 
 .hero-section .sub-section_2 {
@@ -156,8 +74,7 @@ body {
 }
 
 .hero-section .sub-section_2 .rotating-globe {
-  width: 100%;
-  overflow: hidden;
+  width: 80%;
 }
 
 .suppliers {
