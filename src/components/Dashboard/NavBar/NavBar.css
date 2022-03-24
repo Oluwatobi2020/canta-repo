@@ -39,7 +39,9 @@
   border-radius: 8px;
   font-size: 0.8em;
   text-transform: capitalize;
-  padding: 1rem 2rem 1rem 2rem;
-  max-width: 181px;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 /*# sourceMappingURL=NavBar.css.map */

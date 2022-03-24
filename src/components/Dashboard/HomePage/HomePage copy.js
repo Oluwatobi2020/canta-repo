@@ -1,10 +1,12 @@
 import React from "react";
 import "./HomePage.css";
-import Grid from "@mui/material/Grid";
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import CantaWorld from "../../../assets/canta-globe.png";
 import TiventyDigital from "../../../assets/tiventydigital.png";
 import Bamboo from "../../../assets/bamboo.png";
-// import Styled from "styled-components";
 import HeliumHealth from "../../../assets/heliumhealth.png";
 import Evolvecredit from "../../../assets/evolvecredit.png";
 import LeftArrow from "../../../assets/Arrow 1.png";
@@ -29,39 +31,49 @@ import GoogleStore from "../../../assets/GooglePlay.png";
 
 const HomePage = () => {
   return (
-    <div className="Landing-page">
-      <Grid container spacing={2} className="hero-section">
-        <Grid item xs={12} container spacing={2} className="sub-section">
-          <Grid item xs={6} className="sub-section_1">
+    <>
+      <header className="hero-section">
+        <div className="sub-section">
+          <div className="sub-section_1">
             <button className="top-button">For Business</button>
-            <div className="special-text">
-              <h2>
-              Pay your <span>suppliers</span> anywhere in the world
-            </h2>{" "}
-
-            </div>
+            <h2>
+              Pay your <span>suppliers</span>
+              <br /> anywhere in the world
+            </h2>
             <p>You can pay anyone, anywhere, in any currency. </p>
-            <Grid item xs={12} container spacing={3} className="hero-button">
-              <Grid item xs={3} className="googleplaybutton">
-                <img src={GoogleStore} alt="Google store" />
-              </Grid>
-              <Grid item xs={3} className="appstorebutton">
-                <img src={AppStore} alt="App store" />
-              </Grid>
-              <Grid item xs={6}></Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={6} className="sub-section_2">
-            <img src='https://canta.io/images/canta-world.png' alt="CantaWorld" className="rotating-globe" />
-          </Grid>
+            <div className="hero-button">
+              <img
+                src={GoogleStore}
+                alt="Google store"
+                className="googleplaybutton"
+              />
+              <img src={AppStore} alt="App store" className="appstorebutton" />
+            </div>
+          </div>
+          <div className="sub-section_2">
+            <img src={CantaWorld} alt="CantaWorld" className="rotating-globe" />
+          </div>
+        </div>{" "}
+      </header>
+
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+
         </Grid>
       </Grid>
 
-      <Grid container spacing={2} className="suppliers">
-        <Grid item xs={12} className="paysuppliers_1">
+      <section className="suppliers">
+        <div className="paysuppliers_1">
           <p>Pay your suppliers anywhere in the world</p>
-        </Grid>
-      </Grid>
+        </div>
+        {/* <Grid
+          className="paysuppliers"
+          sx={{ display: "flex", justifyContent: "space-between" }}
+        ></Grid> */}
+        {/* <div className="paysuppliers">
+
+        </div> */}
+      </section>
 
       <Grid
         container
@@ -72,7 +84,7 @@ const HomePage = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           // alignItems: "center",
-          padding: "1.5rem",
+          padding: "1rem",
         }}
       >
         <img src={TiventyDigital} alt="Tiventy Digital" />
@@ -81,24 +93,26 @@ const HomePage = () => {
         <img src={Evolvecredit} alt="Evolve Credit" />
       </Grid>
 
-      <Grid container spacing={2} className="about-canta">
-        <Grid item xs={12} className="sub-about">
+      <section container spacing={2} className="about-canta">
+        <div className="sub-about">
           <img src={LeftArrow} alt="Left Arrow" />
           <img src={RightArrow} alt="Right Arrow" />
-        </Grid>
-        <Grid item xs={12} className="about-text">
-          <div className="about-text-2">
-            <p>
-              We make payments online and globally and we know the existing
-              hassle associated with online payments. This is why we decided no
-              one, including you, has to go through all that stress just to make
-              payments globally. Canta provides a seamless, secure and speedy
-              payment process that ensures you’re never late on payments.{" "}
-            </p>
-          </div>
-        </Grid>
-        <Grid item xs={12} container spacing={2} className="canta-about-2">
-          <Grid item xs={3} className="item-1">
+        </div>
+        <div className="about-text">
+          <p>
+            We make payments online and globally and we know the existing hassle
+            <br />
+            associated with online payments. This is why we decided no one,
+            including
+            <br /> you, has to go through all that stress just to make payments
+            globally. Canta
+            <br /> provides a seamless, secure and speedy payment process that
+            ensures you’re
+            <br /> never late on payments.{" "}
+          </p>
+        </div>
+        <div className="canta-about-2">
+          <div className="item-1">
             <div className="icon-and-text">
               <div className="icon-container">
                 <div className="icon-1">
@@ -114,8 +128,8 @@ const HomePage = () => {
               </div>
             </div>
             <div className="vl"></div>
-          </Grid>
-          <Grid item xs={3} className="item-2">
+          </div>
+          <div className="item-2">
             <div className="icon-and-text">
               <div className="icon-container">
                 <div className="icon">
@@ -133,8 +147,8 @@ const HomePage = () => {
               </div>
             </div>
             <div className="vl"></div>
-          </Grid>
-          <Grid item xs={3} className="item-3">
+          </div>
+          <div className="item-3">
             <div className="icon-and-text">
               <div className="icon-container">
                 <div className="icon">
@@ -149,18 +163,19 @@ const HomePage = () => {
                 </p>
               </div>
             </div>
-          </Grid>
-        </Grid>
-        <Grid item xs={12} className="canta-about-3">
+          </div>
+        </div>
+
+        <div className="canta-about-3">
           <h2>
             Trade with anyone <br /> in the world with <br /> zero headache
           </h2>
           <img src={CantaDesign} alt="Canta Design" />
-        </Grid>
-      </Grid>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="virtual-banking">
-        <Grid item xs={6} className="virtual-banking-text">
+      <section className="virtual-banking">
+        <div className="virtual-banking-text">
           <h1>01</h1>
           <h2>
             Virtual Banking
@@ -174,14 +189,14 @@ const HomePage = () => {
             <br />
             currency conversion fees.
           </p>
-        </Grid>
-        <Grid item xs={6} className="virtual-banking-image">
+        </div>
+        <div className="virtual-banking-image">
           <img src={VirtualBanking} alt="vurtual banking" />
-        </Grid>
-      </Grid>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="peer-peer">
-        <Grid item xs={6} className="peer-peer-text">
+      <section className="peer-peer">
+        <div className="peer-peer-text">
           <h1>02</h1>
           <h2>
             Peer-to-Peer
@@ -193,14 +208,14 @@ const HomePage = () => {
             <br /> virtual account you can conduct transactions in several
             <br /> currencies without incurring exorbitant
           </p>
-        </Grid>
-        <Grid item xs={6} className="peer-peer-image">
+        </div>
+        <div className="peer-peer-image">
           <img src={PeerToPeer} alt="peer-peer" />
-        </Grid>
-      </Grid>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="on-off-payment">
-        <Grid item xs={6} className="on-off-payment-text">
+      <section className="on-off-payment">
+        <div className="on-off-payment-text">
           <h1>03</h1>
           <h2>
             On and Offline
@@ -211,14 +226,14 @@ const HomePage = () => {
             <br /> is not a barrier. Connect with our onground personal
             <br /> to process your transactions seamlessly
           </p>
-        </Grid>
-        <Grid item xs={6} className="on-off-payment-image">
+        </div>
+        <div className="on-off-payment-image">
           <img src={OnOffPayment} alt="on-off-payment" />
-        </Grid>
-      </Grid>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="trade-at-yourplace">
-        <Grid item xs={6} className="trade-at-yourplace-text">
+      <section className="trade-at-yourplace">
+        <div className="trade-at-yourplace-text">
           <h1>04</h1>
           <h2>Trade At your pace</h2>
           <p>
@@ -226,94 +241,94 @@ const HomePage = () => {
             <br /> KYC’ed Canta users. Businesses can generate invoices and
             <br /> globally accepted LPO (Licensing purchase order)
           </p>
-        </Grid>
-        <Grid item xs={6} className="trade-at-yourplace-image">
+        </div>
+        <div className="trade-at-yourplace-image">
           <img src={TradeAtYourPlace} alt="trade-at-yourplace" />
-        </Grid>
-      </Grid>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="three-steps">
-        <Grid item container xs={12} className="three-steps-wrapper">
-          <Grid item xs={12} className="title-header">
+      <section className="three-steps">
+        <div className="three-steps-wrapper">
+          <div className="title-header">
             <h2>
               Get started in three
               <br /> easy steps
             </h2>
-          </Grid>
-          <Grid item xs={12} container className="three-steps-images">
-            <Grid item xs={4} className="first-step">
+          </div>
+          <div className="three-steps-images">
+            <div className="first-step">
               <img src={FirstStep} alt="first-step" />
               <p>
                 Quickly signup and
                 <br /> verify details
               </p>
-            </Grid>
-            <Grid item xs={4} className="second-step">
+            </div>
+            <div className="second-step">
               <img src={SecondStep} alt="second-step" />
               <p>
                 Verify your documents to
                 <br /> activate account
               </p>
-            </Grid>
-            <Grid item xs={4} className="third-step">
+            </div>
+            <div className="third-step">
               <img src={ThirdStep} alt="third-step" />
               <p>
                 Buy currencies and send to
                 <br /> anyone globally
               </p>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <Grid container spacing={2} className="longest-section">
-        <Grid item xs={12} className="sub-section-1">
+      <footer className="longest-section">
+        <div className="sub-section-1">
           <h2>
             Hear what people
             <br /> are saying about
             <br /> Canta
           </h2>
           <img src={FirstFooter} alt="First-footer" />
-        </Grid>
-        <Grid item xs={12} container spacing={2} className="faq">
-          <Grid item xs={12} className="faq-header">
+        </div>
+
+        <div className="faq">
+          <div className="faq-header">
             <h2>Faq</h2>
-          </Grid>
-          <Grid item xs={12} className="accordion">
-            <div className="for-accordion">
-              <Accordion />
-            </div>
-          </Grid>
-        </Grid>
-        <Grid item xs={12} className="send-money-globally">
+          </div>
+          <div className="accordion">
+            <Accordion />
+          </div>
+        </div>
+        <div className="send-money-globally">
           <img src={SendGlobally} alt="Send money globally" />
-        </Grid>
-        <Grid item xs={12} className="real-footer" container spacing={10}>
-          <Grid item xs={3} className="real-footer-1">
+        </div>
+
+        <div className="real-footer">
+          <div className="real-footer-1">
             <img src={FooterLogo} alt="Footer logo" />
             <p>
               Helping africans send<br></br> money globally
             </p>
-          </Grid>
-          <Grid item xs={3} className="real-footer-2">
+          </div>
+          <div className="real-footer-2">
             <span>Contact Us</span>
             <p>Contact@canta.io</p>
             <p>+2347032155156</p>
-          </Grid>
-          <Grid item xs={3} className="real-footer-3">
+          </div>
+          <div className="real-footer-3">
             <span>Socials</span>
             <p>LinkedIn</p>
             <p>Instagram</p>
             <p>Twitter</p>
             <p>Facebook</p>
-          </Grid>
-          <Grid item xs={3} className="real-footer-4">
+          </div>
+          <div className="real-footer-4">
             <span>Legal</span>
             <p>Privacy Policy</p>
-          </Grid>
-        </Grid>
-      </Grid>
-    </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 
