@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import Grid from "@mui/material/Grid";
-import CantaWorld from "../../../assets/canta-globe.png";
+// import CantaWorld from "../../../assets/canta-globe.png";
 import TiventyDigital from "../../../assets/tiventydigital.png";
 import Bamboo from "../../../assets/bamboo.png";
 // import Styled from "styled-components";
@@ -31,13 +31,16 @@ const HomePage = () => {
   return (
     <div className="Landing-page">
       <Grid container spacing={2} className="hero-section">
+        <Grid item xs={12} className="tobi-trick">
+          <img src={FooterLogo} alt="Canta logo" />
+        </Grid>
         <Grid item xs={12} container spacing={2} className="sub-section">
-          <Grid item xs={6} className="sub-section_1">
+          <Grid item xs={12} md={6} className="sub-section_1">
             <button className="top-button">For Business</button>
             <div className="special-text">
               <h2>
               Pay your <span>suppliers</span> anywhere in the world
-            </h2>{" "}
+              </h2>{" "}
 
             </div>
             <p>You can pay anyone, anywhere, in any currency. </p>
@@ -51,7 +54,7 @@ const HomePage = () => {
               <Grid item xs={6}></Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6} className="sub-section_2">
+          <Grid item xs={12} md={6} className="sub-section_2">
             <img src='https://canta.io/images/canta-world.png' alt="CantaWorld" className="rotating-globe" />
           </Grid>
         </Grid>
@@ -268,11 +271,14 @@ const HomePage = () => {
 
       <Grid container spacing={2} className="longest-section">
         <Grid item xs={12} className="sub-section-1">
-          <h2>
-            Hear what people
-            <br /> are saying about
-            <br /> Canta
-          </h2>
+          <div className="footer-head">
+            <h2>
+              Hear what people
+              are saying about
+              Canta
+            </h2>
+
+          </div>
           <img src={FirstFooter} alt="First-footer" />
         </Grid>
         <Grid item xs={12} container spacing={2} className="faq">

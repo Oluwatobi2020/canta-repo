@@ -1,47 +1,12 @@
 .TopNav {
-  background-color: #ffffff;
+  background-color: #003366;
   padding: 0rem 5rem 0rem 5rem;
 }
 
-.TopNav .tool_bar {
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.TopNav .tool_bar .download-buttonText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.TopNav .tool_bar .download-buttonText .TopNavText {
-  color: #003366;
-  font-weight: 500;
-  font-size: 1em;
-  margin-right: 5rem;
-}
-
-.TopNav .tool_bar .download-buttonText .download-button {
-  background-color: #003366;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.8em;
-  text-transform: capitalize;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+@media (max-width: 420px) {
+  .TopNavWithBg {
+    background-image: url("../../../assets/hero-bg.png");
+    padding: 0rem 5rem 0rem 5rem;
+  }
 }
 /*# sourceMappingURL=NavBar.css.map */
