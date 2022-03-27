@@ -112,6 +112,7 @@ body {
   .Landing-page .hero-section .sub-section .sub-section_1 {
     padding-left: 0;
     padding-top: 2rem;
+    margin-left: 1rem;
     text-align: center;
   }
   .Landing-page .hero-section .sub-section .sub-section_1 .top-button {
@@ -159,7 +160,6 @@ body {
     width: 100%;
   }
   .Landing-page .hero-section .sub-section .sub-section_2 {
-    margin-right: 3rem;
     padding: 0;
   }
   .Landing-page .hero-section .sub-section .sub-section_2 img {
