@@ -112,8 +112,8 @@ const HomePage = () => {
               <div className="icon-text">
                 <p>
                   Fund with your local currency and payout
-                  <br /> in 30+ currencies and be rest assured,
-                  <br /> your funds are held securely.
+                  in 30+ currencies and be rest assured,
+                  your funds are held securely.
                 </p>
               </div>
             </div>
@@ -129,10 +129,10 @@ const HomePage = () => {
               <div className="icon-text">
                 <p>
                   Not okay with our rate? Buy and sell fx
-                  <br /> amongst fellow KYC’ed Canta users.
-                  <br /> Businesses can generate invoices and
-                  <br /> globally accepted LPO (Licensing purchase
-                  <br /> order)
+                  amongst fellow KYC’ed Canta users.
+                  Businesses can generate invoices and
+                  globally accepted LPO (Licensing purchase
+                  order)
                 </p>
               </div>
             </div>
@@ -148,8 +148,8 @@ const HomePage = () => {
               <div className="icon-text">
                 <p>
                   We have customer personnel that would
-                  <br /> attend to you in real-time even though
-                  <br /> you’re offline
+                  attend to you in real-time even though
+                  you’re offline
                 </p>
               </div>
             </div>

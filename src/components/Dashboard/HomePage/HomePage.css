@@ -190,6 +190,37 @@ body {
   }
 }
 
+@media (min-width: 900px) and (max-width: 1300px) {
+  .Landing-page .hero-section .sub-section .sub-section_1 {
+    padding-top: 3rem;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .top-button {
+    padding: 0.7rem;
+    width: 30%;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .special-text {
+    width: 90%;
+    padding-top: 2rem;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .special-text h2 {
+    font-size: 3em;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .hero-button .googleplaybutton img {
+    width: 100%;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .hero-button .appstorebutton img {
+    width: 100%;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_2 {
+    text-align: justify;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_2 img {
+    width: 100%;
+  }
+}
+
 .Landing-page .suppliers {
   background-color: #f7ffd9;
 }
@@ -240,6 +271,25 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .Landing-page .section-main img {
+    width: 15%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .Landing-page .section-main {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .Landing-page .section-main img {
     width: 15%;
@@ -334,6 +384,10 @@ body {
   font-size: 1.5em;
 }
 
+.Landing-page .about-canta .canta-about-2 .item-1 .icon-and-text .icon-text {
+  width: 85%;
+}
+
 .Landing-page .about-canta .canta-about-2 .item-1 .icon-and-text .icon-text p {
   font-style: normal;
   font-weight: 300;
@@ -378,6 +432,10 @@ body {
   font-size: 1.7em;
 }
 
+.Landing-page .about-canta .canta-about-2 .item-2 .icon-and-text .icon-text {
+  width: 85%;
+}
+
 .Landing-page .about-canta .canta-about-2 .item-2 .icon-and-text .icon-text p {
   font-style: normal;
   font-weight: 300;
@@ -420,6 +478,10 @@ body {
 .Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text .icon-container .icon .user-icon {
   color: #f863a7;
   font-size: 1.7em;
+}
+
+.Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text .icon-text {
+  width: 85%;
 }
 
 .Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text .icon-text p {
@@ -566,6 +628,18 @@ body {
   }
   .Landing-page .about-canta .canta-about-3 h2 {
     font-size: 2em;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .Landing-page .about-canta .sub-about {
+    padding-top: 2rem;
+  }
+  .Landing-page .about-canta .about-text .about-text-2 p {
+    font-size: 1.5em;
+  }
+  .Landing-page .about-canta .canta-about-2 {
+    padding: 2rem 1rem 3rem 3rem;
   }
 }
 
@@ -1254,6 +1328,21 @@ body {
   }
   .Landing-page .longest-section .faq .accordion .for-accordion {
     width: 90%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .Landing-page .longest-section .sub-section-1 .footer-head h2 {
+    font-size: 2em;
+  }
+  .Landing-page .longest-section .sub-section-1 img {
+    width: 50%;
+  }
+  .Landing-page .longest-section .faq .faq-header h2 {
+    font-size: 2em;
+  }
+  .Landing-page .longest-section .faq .accordion .for-accordion {
+    width: 100%;
   }
 }
 
