@@ -98,7 +98,7 @@ body {
     padding: 0;
   }
   .Landing-page .hero-section .tobi-trick {
-    padding: 2rem 0rem 0rem 2rem;
+    padding: 3rem 0rem 0rem 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,7 +111,7 @@ body {
   }
   .Landing-page .hero-section .sub-section .sub-section_1 {
     padding-left: 0;
-    padding-top: 2rem;
+    padding-top: 5rem;
     margin-left: 1rem;
     text-align: center;
   }
@@ -128,9 +128,10 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    width: 100%;
   }
   .Landing-page .hero-section .sub-section .sub-section_1 .special-text h2 {
-    font-size: 2.2em;
+    font-size: 2.6em;
   }
   .Landing-page .hero-section .sub-section .sub-section_1 p {
     text-align: center;
@@ -160,10 +161,32 @@ body {
     width: 100%;
   }
   .Landing-page .hero-section .sub-section .sub-section_2 {
+    text-align: center;
     padding: 0;
   }
   .Landing-page .hero-section .sub-section .sub-section_2 img {
-    width: 100%;
+    width: 70%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .hero-section .sub-section .sub-section_1 {
+    padding-top: 5rem;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .special-text {
+    width: 70%;
+    padding-top: 2rem;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_1 .special-text h2 {
+    font-size: 3em;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_2 {
+    text-align: justify;
+    margin-top: -3rem;
+    padding: 0;
+  }
+  .Landing-page .hero-section .sub-section .sub-section_2 img {
+    width: 50%;
   }
 }
 
@@ -198,6 +221,22 @@ body {
   }
   .Landing-page .section-main img {
     width: 25%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .section-main {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Landing-page .section-main img {
+    width: 15%;
     padding: 0;
   }
 }
@@ -509,6 +548,24 @@ body {
   }
 }
 
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .about-canta .sub-about {
+    padding-top: 2rem;
+  }
+  .Landing-page .about-canta .about-text .about-text-2 p {
+    font-size: 1.5em;
+  }
+  .Landing-page .about-canta .canta-about-2 {
+    padding: 2rem 1rem 3rem 3rem;
+  }
+  .Landing-page .about-canta .canta-about-3 {
+    padding: 3rem 2rem 7rem 2rem;
+  }
+  .Landing-page .about-canta .canta-about-3 h2 {
+    font-size: 2em;
+  }
+}
+
 .Landing-page .virtual-banking {
   background-color: #f7ffd9;
   display: -webkit-box;
@@ -547,7 +604,7 @@ body {
 
 @media (max-width: 420px) {
   .Landing-page .virtual-banking {
-    padding: 0;
+    padding: 2rem 0rem 3rem 0rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -564,8 +621,23 @@ body {
   .Landing-page .virtual-banking .virtual-banking-text h2 {
     font-size: 2em;
   }
-  .Landing-page .virtual-banking .virtual-banking-text p {
+  .Landing-page .virtual-banking .virtual-banking-text .virtual-text p {
     font-size: 0.7em;
+  }
+  .Landing-page .virtual-banking .virtual-banking-image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .virtual-banking .virtual-banking-text h1 {
+    font-size: 3.2em;
+  }
+  .Landing-page .virtual-banking .virtual-banking-text h2 {
+    font-size: 1.8em;
+  }
+  .Landing-page .virtual-banking .virtual-banking-text p {
+    font-size: 0.8em;
   }
   .Landing-page .virtual-banking .virtual-banking-image {
     max-width: 100%;
@@ -610,7 +682,7 @@ body {
 
 @media (max-width: 420px) {
   .Landing-page .peer-peer {
-    padding: 0;
+    padding: 2rem 0rem 3rem 0rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -627,8 +699,23 @@ body {
   .Landing-page .peer-peer .peer-peer-text h2 {
     font-size: 2em;
   }
-  .Landing-page .peer-peer .peer-peer-text p {
+  .Landing-page .peer-peer .peer-peer-text .peer-text p {
     font-size: 0.7em;
+  }
+  .Landing-page .peer-peer .peer-peer-image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .peer-peer .peer-peer-text h1 {
+    font-size: 3.2em;
+  }
+  .Landing-page .peer-peer .peer-peer-text h2 {
+    font-size: 1.8em;
+  }
+  .Landing-page .peer-peer .peer-peer-text p {
+    font-size: 0.8em;
   }
   .Landing-page .peer-peer .peer-peer-image {
     max-width: 100%;
@@ -661,7 +748,11 @@ body {
   color: #003366;
 }
 
-.Landing-page .on-off-payment .on-off-payment-text p {
+.Landing-page .on-off-payment .on-off-payment-text .one-off-text {
+  width: 60%;
+}
+
+.Landing-page .on-off-payment .on-off-payment-text .one-off-text p {
   font-weight: 300;
   font-size: 1em;
   color: #002626;
@@ -673,7 +764,7 @@ body {
 
 @media (max-width: 420px) {
   .Landing-page .on-off-payment {
-    padding: 0;
+    padding: 2rem 0rem 3rem 0rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -682,7 +773,7 @@ body {
   .Landing-page .on-off-payment .on-off-payment-text {
     padding-top: 2rem;
     max-width: 100%;
-    padding-left: 0;
+    padding-left: 5rem;
   }
   .Landing-page .on-off-payment .on-off-payment-text h1 {
     font-size: 3.2em;
@@ -690,8 +781,29 @@ body {
   .Landing-page .on-off-payment .on-off-payment-text h2 {
     font-size: 2em;
   }
-  .Landing-page .on-off-payment .on-off-payment-text p {
+  .Landing-page .on-off-payment .on-off-payment-text .one-off-text {
+    width: 70%;
+  }
+  .Landing-page .on-off-payment .on-off-payment-text .one-off-text p {
     font-size: 0.7em;
+  }
+  .Landing-page .on-off-payment .on-off-payment-image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .on-off-payment .on-off-payment-text h1 {
+    font-size: 3.2em;
+  }
+  .Landing-page .on-off-payment .on-off-payment-text h2 {
+    font-size: 1.8em;
+  }
+  .Landing-page .on-off-payment .on-off-payment-text .one-off-text {
+    width: 80%;
+  }
+  .Landing-page .on-off-payment .on-off-payment-text .one-off-text p {
+    font-size: 0.8em;
   }
   .Landing-page .on-off-payment .on-off-payment-image {
     max-width: 100%;
@@ -724,7 +836,11 @@ body {
   color: #FD3A58;
 }
 
-.Landing-page .trade-at-yourplace .trade-at-yourplace-text p {
+.Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text {
+  width: 60%;
+}
+
+.Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text p {
   font-weight: 300;
   font-size: 1em;
   color: #002626;
@@ -736,7 +852,7 @@ body {
 
 @media (max-width: 420px) {
   .Landing-page .trade-at-yourplace {
-    padding: 0;
+    padding: 2rem 0rem 3rem 0rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -744,7 +860,7 @@ body {
   }
   .Landing-page .trade-at-yourplace .trade-at-yourplace-text {
     max-width: 100%;
-    padding-left: 0;
+    padding-left: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -754,8 +870,29 @@ body {
   .Landing-page .trade-at-yourplace .trade-at-yourplace-text h2 {
     font-size: 2em;
   }
-  .Landing-page .trade-at-yourplace .trade-at-yourplace-text p {
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text {
+    width: 70%;
+  }
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text p {
     font-size: 0.7em;
+  }
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text h1 {
+    font-size: 3.2em;
+  }
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text h2 {
+    font-size: 1.8em;
+  }
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text {
+    width: 90%;
+  }
+  .Landing-page .trade-at-yourplace .trade-at-yourplace-text .trade-text p {
+    font-size: 0.8em;
   }
   .Landing-page .trade-at-yourplace .trade-at-yourplace-image {
     max-width: 100%;
@@ -866,6 +1003,13 @@ body {
   }
   .Landing-page .three-steps .three-steps-wrapper .three-steps-images .third-step p {
     font-size: 1em;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .three-steps .three-steps-wrapper .title-header h2 {
+    font-size: 2em;
+    font-weight: 400;
   }
 }
 
@@ -1031,6 +1175,9 @@ body {
   .Landing-page .longest-section .faq .faq-header h2 {
     font-size: 1.5em;
   }
+  .Landing-page .longest-section .faq .accordion {
+    margin-left: 1rem;
+  }
   .Landing-page .longest-section .faq .accordion .for-accordion {
     width: 90%;
   }
@@ -1089,6 +1236,21 @@ body {
   }
   .Landing-page .longest-section .real-footer .real-footer-4 p {
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  .Landing-page .longest-section .sub-section-1 .footer-head h2 {
+    font-size: 2em;
+  }
+  .Landing-page .longest-section .sub-section-1 img {
+    width: 50%;
+  }
+  .Landing-page .longest-section .faq .faq-header h2 {
+    font-size: 2em;
+  }
+  .Landing-page .longest-section .faq .accordion .for-accordion {
+    width: 90%;
   }
 }
 

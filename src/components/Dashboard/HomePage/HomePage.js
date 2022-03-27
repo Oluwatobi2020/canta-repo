@@ -26,6 +26,7 @@ import SendGlobally from "../../../assets/send-globally.png";
 import FooterLogo from "../../../assets/footer-logo.png";
 import AppStore from "../../../assets/AppStore.png";
 import GoogleStore from "../../../assets/GooglePlay.png";
+import CantaGlobe from "../../../assets/canta-globe.png";
 
 const HomePage = () => {
   return (
@@ -55,7 +56,7 @@ const HomePage = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} md={6} className="sub-section_2">
-            <img src='https://canta.io/images/canta-world.png' alt="CantaWorld" className="rotating-globe" />
+            <img src={CantaGlobe} alt="CantaWorld" className="rotating-globe" />
           </Grid>
         </Grid>
       </Grid>
@@ -169,6 +170,7 @@ const HomePage = () => {
             Virtual Banking
             <br /> with you in mind
           </h2>
+          <div className="virtual-text">
           <p>
             Whether as a business or an individual, you can open
             <br /> and manage your accounts wherever you are. With
@@ -177,6 +179,7 @@ const HomePage = () => {
             <br />
             currency conversion fees.
           </p>
+          </div>
         </Grid>
         <Grid item xs={6} className="virtual-banking-image">
           <img src={VirtualBanking} alt="vurtual banking" />
@@ -190,12 +193,14 @@ const HomePage = () => {
             Peer-to-Peer
             <br /> Remittance{" "}
           </h2>
-          <p>
-            Whether as a business or an individual, you can open
-            <br /> and manage your accounts wherever you are. With our
-            <br /> virtual account you can conduct transactions in several
-            <br /> currencies without incurring exorbitant
-          </p>
+          <div className="peer-text">
+            <p>
+              Whether as a business or an individual, you can open
+              <br /> and manage your accounts wherever you are. With our
+              <br /> virtual account you can conduct transactions in several
+              <br /> currencies without incurring exorbitant
+            </p>
+          </div>
         </Grid>
         <Grid item xs={6} className="peer-peer-image">
           <img src={PeerToPeer} alt="peer-peer" />
@@ -209,11 +214,13 @@ const HomePage = () => {
             On and Offline
             <br /> Payment
           </h2>
-          <p>
-            We care about your money as much as you do. The internet
-            <br /> is not a barrier. Connect with our onground personal
-            <br /> to process your transactions seamlessly
-          </p>
+          <div className="one-off-text">
+            <p>
+              We care about your money as much as you do. The internet
+              is not a barrier. Connect with our onground personal
+              to process your transactions seamlessly
+            </p>
+          </div>
         </Grid>
         <Grid item xs={6} className="on-off-payment-image">
           <img src={OnOffPayment} alt="on-off-payment" />
@@ -224,11 +231,13 @@ const HomePage = () => {
         <Grid item xs={6} className="trade-at-yourplace-text">
           <h1>04</h1>
           <h2>Trade At your pace</h2>
-          <p>
-            Not okay with our rate? Buy and sell fx amongst fellow
-            <br /> KYC’ed Canta users. Businesses can generate invoices and
-            <br /> globally accepted LPO (Licensing purchase order)
-          </p>
+          <div className="trade-text">
+            <p>
+              Not okay with our rate? Buy and sell fx amongst fellow
+              KYC’ed Canta users. Businesses can generate invoices and
+              globally accepted LPO (Licensing purchase order)
+            </p>
+          </div>
         </Grid>
         <Grid item xs={6} className="trade-at-yourplace-image">
           <img src={TradeAtYourPlace} alt="trade-at-yourplace" />
