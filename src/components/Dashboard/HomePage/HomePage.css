@@ -541,6 +541,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 2rem;
   }
   .Landing-page .about-canta .canta-about-2 .item-1 {
     padding-top: 3rem;
@@ -557,6 +558,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .Landing-page .about-canta .canta-about-2 .item-1 .icon-and-text .icon-text {
+    width: 90%;
   }
   .Landing-page .about-canta .canta-about-2 .item-1 .vl {
     display: none;
@@ -577,6 +581,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .Landing-page .about-canta .canta-about-2 .item-2 .icon-and-text .icon-text {
+    width: 90%;
+  }
   .Landing-page .about-canta .canta-about-2 .item-2 .vl {
     display: none;
   }
@@ -595,6 +602,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text .icon-text {
+    width: 90%;
   }
   .Landing-page .about-canta .canta-about-3 {
     -webkit-box-orient: vertical;
