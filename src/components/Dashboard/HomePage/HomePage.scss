@@ -206,6 +206,12 @@ body {
     background-color: #f7ffd9;
   }
 
+  @media (max-width:420px){
+    .suppliers{
+      margin: 0;
+    }
+  }
+
   .section-main {
     background: #f2f9ff;
     padding: 2rem;
@@ -447,7 +453,7 @@ body {
             }
             .icon-text{
               p{
-                font-size: 0.7em
+                // font-size: 0.7em
               }
             }
           }
@@ -456,7 +462,7 @@ body {
           }
         }
         .item-2{
-          padding-top: 1rem;
+          padding-top: 3rem;
           max-width: 100%;
           .icon-and-text{
             padding: 0;
@@ -479,7 +485,7 @@ body {
           }
         }
         .item-3{
-          padding-top: 1rem;
+          padding-top: 3rem;
           max-width: 100%;
           .icon-and-text{
             padding: 0;
@@ -1281,7 +1287,7 @@ body {
           }
         }
         .accordion{
-          margin-left: 1rem;
+          margin-left: 0.8rem;
           .for-accordion{
             width: 90%;
           }

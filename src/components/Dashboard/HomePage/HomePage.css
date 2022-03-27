@@ -194,6 +194,12 @@ body {
   background-color: #f7ffd9;
 }
 
+@media (max-width: 420px) {
+  .Landing-page .suppliers {
+    margin: 0;
+  }
+}
+
 .Landing-page .section-main {
   background: #f2f9ff;
   padding: 2rem;
@@ -490,14 +496,11 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .Landing-page .about-canta .canta-about-2 .item-1 .icon-and-text .icon-text p {
-    font-size: 0.7em;
-  }
   .Landing-page .about-canta .canta-about-2 .item-1 .vl {
     display: none;
   }
   .Landing-page .about-canta .canta-about-2 .item-2 {
-    padding-top: 1rem;
+    padding-top: 3rem;
     max-width: 100%;
   }
   .Landing-page .about-canta .canta-about-2 .item-2 .icon-and-text {
@@ -516,7 +519,7 @@ body {
     display: none;
   }
   .Landing-page .about-canta .canta-about-2 .item-3 {
-    padding-top: 1rem;
+    padding-top: 3rem;
     max-width: 100%;
   }
   .Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text {
@@ -1176,7 +1179,7 @@ body {
     font-size: 1.5em;
   }
   .Landing-page .longest-section .faq .accordion {
-    margin-left: 1rem;
+    margin-left: 0.8rem;
   }
   .Landing-page .longest-section .faq .accordion .for-accordion {
     width: 90%;
