@@ -61,8 +61,8 @@ const HomePage = () => {
       </Grid>
 
       <Grid container spacing={2} className="suppliers">
-        <Grid item xs={12} className="paysuppliers_1">
-          <p>Pay your suppliers anywhere in the world</p>
+        <Grid item xs={12} className="paysuppliers_1" id="#scroll-container">
+          <p id="scroll-text">Pay your suppliers anywhere in the world</p>
         </Grid>
       </Grid>
 
