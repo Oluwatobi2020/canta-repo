@@ -244,7 +244,7 @@ body {
 }
 
 @media (max-width: 420px) {
-  .Landing-page .section-main {
+  .Landing-page .section-main-2 {
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -256,7 +256,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .Landing-page .section-main img {
+  .Landing-page .section-main-2 img {
     width: 25%;
     padding: 0;
   }
@@ -558,6 +558,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-right: 1rem;
   }
   .Landing-page .about-canta .canta-about-2 .item-1 .icon-and-text .icon-text {
     width: 90%;
@@ -580,6 +581,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-right: 1rem;
   }
   .Landing-page .about-canta .canta-about-2 .item-2 .icon-and-text .icon-text {
     width: 90%;
@@ -602,6 +604,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-right: 1rem;
   }
   .Landing-page .about-canta .canta-about-2 .item-3 .icon-and-text .icon-text {
     width: 90%;
@@ -699,7 +702,7 @@ body {
   }
   .Landing-page .virtual-banking .virtual-banking-text {
     max-width: 100%;
-    padding-left: 0;
+    padding-left: 5rem;
     padding-top: 2rem;
   }
   .Landing-page .virtual-banking .virtual-banking-text h1 {
@@ -707,6 +710,9 @@ body {
   }
   .Landing-page .virtual-banking .virtual-banking-text h2 {
     font-size: 2em;
+  }
+  .Landing-page .virtual-banking .virtual-banking-text .virtual-text {
+    width: 70%;
   }
   .Landing-page .virtual-banking .virtual-banking-text .virtual-text p {
     font-size: 0.7em;
@@ -723,7 +729,7 @@ body {
   .Landing-page .virtual-banking .virtual-banking-text h2 {
     font-size: 1.8em;
   }
-  .Landing-page .virtual-banking .virtual-banking-text p {
+  .Landing-page .virtual-banking .virtual-banking-text .virtual-text p {
     font-size: 0.8em;
   }
   .Landing-page .virtual-banking .virtual-banking-image {
@@ -757,9 +763,9 @@ body {
   color: #996E00;
 }
 
-.Landing-page .peer-peer .peer-peer-text p {
+.Landing-page .peer-peer .peer-peer-text .peer-text p {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #002626;
 }
 
@@ -778,13 +784,16 @@ body {
   .Landing-page .peer-peer .peer-peer-text {
     padding-top: 2rem;
     max-width: 100%;
-    padding-left: 0;
+    padding-left: 5rem;
   }
   .Landing-page .peer-peer .peer-peer-text h1 {
     font-size: 3.2em;
   }
   .Landing-page .peer-peer .peer-peer-text h2 {
     font-size: 2em;
+  }
+  .Landing-page .peer-peer .peer-peer-text .peer-text {
+    width: 70%;
   }
   .Landing-page .peer-peer .peer-peer-text .peer-text p {
     font-size: 0.7em;
@@ -1268,7 +1277,15 @@ body {
   .Landing-page .longest-section .faq .accordion .for-accordion {
     width: 90%;
   }
-  .Landing-page .longest-section .send-money-globally img {
+  .Landing-page .longest-section .send-money-globally {
+    display: none;
+  }
+  .Landing-page .longest-section .send-money-globally-2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Landing-page .longest-section .send-money-globally-2 img {
     width: 90%;
   }
   .Landing-page .longest-section .real-footer {

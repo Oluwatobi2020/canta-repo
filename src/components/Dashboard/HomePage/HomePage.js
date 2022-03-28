@@ -23,6 +23,7 @@ import ThirdStep from "../../../assets/third-image.png";
 import FirstFooter from "../../../assets/footer-1.png";
 import Accordion from "../../Dashboard/Utils/Accordion.js";
 import SendGlobally from "../../../assets/send-globally.png";
+import MobileImage from "../../../assets/footer-mobile.png";
 import FooterLogo from "../../../assets/footer-logo.png";
 import AppStore from "../../../assets/AppStore.png";
 import GoogleStore from "../../../assets/GooglePlay.png";
@@ -40,9 +41,8 @@ const HomePage = () => {
             <button className="top-button">For Business</button>
             <div className="special-text">
               <h2>
-              Pay your <span>suppliers</span> anywhere in the world
+                Pay your <span>suppliers</span> anywhere in the world
               </h2>{" "}
-
             </div>
             <p>You can pay anyone, anywhere, in any currency. </p>
             <Grid item xs={12} container spacing={3} className="hero-button">
@@ -72,7 +72,7 @@ const HomePage = () => {
         // spacing={2}
         className="section-main"
         sx={{
-          display: "flex",
+          display: { xs: "none", sm: "flex", md: "flex" },
           flexDirection: "row",
           justifyContent: "space-between",
           // alignItems: "center",
@@ -83,6 +83,24 @@ const HomePage = () => {
         <img src={Bamboo} alt="Bamboo" />
         <img src={HeliumHealth} alt="Helium Health" />
         <img src={Evolvecredit} alt="Evolve Credit" />
+      </Grid>
+
+      <Grid
+        container
+        // spacing={2}
+        className="section-main-2"
+
+        sx={{
+          display: { xs: "flex", sm: "none", md: "none" },
+          flexDirection: "row",
+          justifyContent: "space-between",
+          // alignItems: "center",
+          padding: "1.5rem",
+        }}
+      >
+        <img src={TiventyDigital} alt="Tiventy Digital" />
+        <img src={Bamboo} alt="Bamboo" />
+        <img src={HeliumHealth} alt="Helium Health" />
       </Grid>
 
       <Grid container spacing={2} className="about-canta">
@@ -111,9 +129,8 @@ const HomePage = () => {
               </div>
               <div className="icon-text">
                 <p>
-                  Fund with your local currency and payout
-                  in 30+ currencies and be rest assured,
-                  your funds are held securely.
+                  Fund with your local currency and payout in 30+ currencies and
+                  be rest assured, your funds are held securely.
                 </p>
               </div>
             </div>
@@ -128,11 +145,9 @@ const HomePage = () => {
               </div>
               <div className="icon-text">
                 <p>
-                  Not okay with our rate? Buy and sell fx
-                  amongst fellow KYC’ed Canta users.
-                  Businesses can generate invoices and
-                  globally accepted LPO (Licensing purchase
-                  order)
+                  Not okay with our rate? Buy and sell fx amongst fellow KYC’ed
+                  Canta users. Businesses can generate invoices and globally
+                  accepted LPO (Licensing purchase order)
                 </p>
               </div>
             </div>
@@ -147,9 +162,8 @@ const HomePage = () => {
               </div>
               <div className="icon-text">
                 <p>
-                  We have customer personnel that would
-                  attend to you in real-time even though
-                  you’re offline
+                  We have customer personnel that would attend to you in
+                  real-time even though you’re offline
                 </p>
               </div>
             </div>
@@ -171,14 +185,14 @@ const HomePage = () => {
             <br /> with you in mind
           </h2>
           <div className="virtual-text">
-          <p>
-            Whether as a business or an individual, you can open
-            <br /> and manage your accounts wherever you are. With
-            <br /> our virtual account you can conduct transactions in
-            <br /> several currencies without incurring exorbitant
-            <br />
-            currency conversion fees.
-          </p>
+            <p>
+              Whether as a business or an individual, you can open
+              and manage your accounts wherever you are. With
+              our virtual account you can conduct transactions in
+              several currencies without incurring exorbitant
+            
+              currency conversion fees.
+            </p>
           </div>
         </Grid>
         <Grid item xs={6} className="virtual-banking-image">
@@ -196,9 +210,9 @@ const HomePage = () => {
           <div className="peer-text">
             <p>
               Whether as a business or an individual, you can open
-              <br /> and manage your accounts wherever you are. With our
-              <br /> virtual account you can conduct transactions in several
-              <br /> currencies without incurring exorbitant
+              and manage your accounts wherever you are. With our
+              virtual account you can conduct transactions in several
+              currencies without incurring exorbitant
             </p>
           </div>
         </Grid>
@@ -216,9 +230,9 @@ const HomePage = () => {
           </h2>
           <div className="one-off-text">
             <p>
-              We care about your money as much as you do. The internet
-              is not a barrier. Connect with our onground personal
-              to process your transactions seamlessly
+              We care about your money as much as you do. The internet is not a
+              barrier. Connect with our onground personal to process your
+              transactions seamlessly
             </p>
           </div>
         </Grid>
@@ -233,9 +247,9 @@ const HomePage = () => {
           <h2>Trade At your pace</h2>
           <div className="trade-text">
             <p>
-              Not okay with our rate? Buy and sell fx amongst fellow
-              KYC’ed Canta users. Businesses can generate invoices and
-              globally accepted LPO (Licensing purchase order)
+              Not okay with our rate? Buy and sell fx amongst fellow KYC’ed
+              Canta users. Businesses can generate invoices and globally
+              accepted LPO (Licensing purchase order)
             </p>
           </div>
         </Grid>
@@ -281,12 +295,7 @@ const HomePage = () => {
       <Grid container spacing={2} className="longest-section">
         <Grid item xs={12} className="sub-section-1">
           <div className="footer-head">
-            <h2>
-              Hear what people
-              are saying about
-              Canta
-            </h2>
-
+            <h2>Hear what people are saying about Canta</h2>
           </div>
           <img src={FirstFooter} alt="First-footer" />
         </Grid>
@@ -300,8 +309,22 @@ const HomePage = () => {
             </div>
           </Grid>
         </Grid>
-        <Grid item xs={12} className="send-money-globally">
+        <Grid
+          item
+          xs={12}
+          sx={{ display: { xs: "none", sm: "flex", md: "flex" } }}
+          className="send-money-globally"
+        >
           <img src={SendGlobally} alt="Send money globally" />
+        </Grid>
+
+        <Grid
+          item
+          xs={12}
+          sx={{ display: { xs: "flex", sm: "none", md: "none" } }}
+          className="send-money-globally-2"
+        >
+          <img src={MobileImage} alt="Footer-Mobile" />
         </Grid>
         <Grid item xs={12} className="real-footer" container spacing={10}>
           <Grid item xs={3} className="real-footer-1">

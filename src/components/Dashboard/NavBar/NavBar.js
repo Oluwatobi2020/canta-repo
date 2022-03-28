@@ -43,20 +43,6 @@ export default function ButtonAppBar() {
           </Toolbar>
         </AppBar>
       </Box>
-      {/* <Box
-        sx={{ flexGrow: 1, display: { xs: "block", sm: "none", md: "none" } }}>
-        <AppBar
-          position="static"
-          sx={{ px: 1, py: 1, backgroundColor:"#003366" }}
-          
-        >
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <img src={FooterLogo} alt="Canta-white-logo" />
-            </Typography>
-          </Toolbar>
-        </AppBar>
-      </Box> */}
     </div>
   );
 }

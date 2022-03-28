@@ -291,7 +291,7 @@ body {
   }
 
   @media (max-width: 420px) {
-    .section-main {
+    .section-main-2 {
       padding: 1rem;
       display: flex;
       align-items: center;
@@ -527,6 +527,7 @@ body {
             .icon-container {
               display: flex;
               justify-content: center;
+              margin-right: 1rem;
               .icon-1 {
                 .flash-icon {
                 }
@@ -552,6 +553,7 @@ body {
             .icon-container {
               display: flex;
               justify-content: center;
+              margin-right: 1rem;
               .icon {
                 .sign-post-icon {
                 }
@@ -574,6 +576,7 @@ body {
             .icon-container {
               display: flex;
               justify-content: center;
+              margin-right: 1rem;
               .icon {
                 .user-icon {
                 }
@@ -840,7 +843,7 @@ body {
       flex-direction: column;
       .virtual-banking-text {
         max-width: 100%;
-        padding-left: 0;
+        padding-left: 5rem;
         padding-top: 2rem;
         h1 {
           font-size: 3.2em;
@@ -849,6 +852,7 @@ body {
           font-size: 2em;
         }
         .virtual-text {
+          width: 70%;
           p {
             font-size: 0.7em;
           }
@@ -876,8 +880,10 @@ body {
         h2 {
           font-size: 1.8em;
         }
-        p {
-          font-size: 0.8em;
+        .virtual-text{
+          p {
+            font-size: 0.8em;
+          }
         }
       }
       .virtual-banking-image {
@@ -906,10 +912,13 @@ body {
         font-size: 3em;
         color: $text-color-2;
       }
-      p {
-        font-weight: 300;
-        font-size: 1em;
-        color: #002626;
+      .peer-text{
+        p {
+          font-weight: 300;
+          font-size: 0.8em;
+          color: #002626;
+        }
+
       }
     }
     .peer-peer-image {
@@ -926,7 +935,7 @@ body {
       .peer-peer-text {
         padding-top: 2rem;
         max-width: 100%;
-        padding-left: 0;
+        padding-left: 5rem;
         h1 {
           font-size: 3.2em;
         }
@@ -934,6 +943,7 @@ body {
           font-size: 2em;
         }
         .peer-text {
+          width: 70%;
           p {
             font-size: 0.7em;
           }
@@ -1440,7 +1450,11 @@ body {
           }
         }
       }
-      .send-money-globally {
+      .send-money-globally{
+        display: none;
+      }
+      .send-money-globally-2 {
+        justify-content: center;
         img {
           width: 90%;
         }
