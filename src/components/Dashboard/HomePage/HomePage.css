@@ -682,7 +682,11 @@ body {
   color: #516600;
 }
 
-.Landing-page .virtual-banking .virtual-banking-text p {
+.Landing-page .virtual-banking .virtual-banking-text .virtual-text {
+  width: 60%;
+}
+
+.Landing-page .virtual-banking .virtual-banking-text .virtual-text p {
   font-weight: 300;
   font-size: 1em;
   color: #002626;
@@ -761,6 +765,10 @@ body {
   font-weight: 300;
   font-size: 3em;
   color: #996E00;
+}
+
+.Landing-page .peer-peer .peer-peer-text .peer-text {
+  width: 60%;
 }
 
 .Landing-page .peer-peer .peer-peer-text .peer-text p {

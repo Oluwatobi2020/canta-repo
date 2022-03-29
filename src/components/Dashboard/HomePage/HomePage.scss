@@ -824,10 +824,14 @@ body {
         font-size: 3em;
         color: $text-color-1;
       }
-      p {
-        font-weight: 300;
-        font-size: 1em;
-        color: #002626;
+      .virtual-text{
+        width: 60%;
+        p {
+          font-weight: 300;
+          font-size: 1em;
+          color: #002626;
+        }
+
       }
     }
     .virtual-banking-image {
@@ -913,6 +917,7 @@ body {
         color: $text-color-2;
       }
       .peer-text{
+        width: 60%;
         p {
           font-weight: 300;
           font-size: 0.8em;
